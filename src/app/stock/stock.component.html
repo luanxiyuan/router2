@@ -1,0 +1,14 @@
+<div class="stock">
+  <p>
+    这里是股票信息组件,{{stockId}}
+    股票id是{{stock.id}}, 股票名称是{{stock.name}}
+  </p>
+  <p>
+    <a [routerLink]="['./']">买家信息</a>&nbsp;
+    <a [routerLink]="['./seller', 100]">卖家信息</a>
+  </p>
+  <p>
+    <input type="button" value="关注" (click)="focus = true" />
+  </p>
+  <router-outlet></router-outlet>
+</div>
